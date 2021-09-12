@@ -1,12 +1,4 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y \
-    curl \
-    cvs \
-    nginx
-
-# Below are some temporarily added instructions,
-# that should be incorporated into the sophisticated instructions above.
-
-
-CMD [ "pwd" ]
+WORKDIR /sample_folder
+RUN touch sample_file
